@@ -1,0 +1,3 @@
+div#frame {background-color: dimgray; margin: 1px; padding: 1px; text-align: center; width: 450px; height: 510px;}
+div#input {background-color: black; font-family: Terminal; font-size:48px; color:red; height: 50px; margin: 10px; padding-right: 2px; text-align: right;}
+button {height: 100px; font-family: Arial; font-size:25px; color:black; margin-bottom: 10px; width: 105px; border-radius: 30px;}
