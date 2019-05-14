@@ -1,0 +1,15 @@
+body {background-color: skyblue;}
+table th {width: 18%;text-align: left;border: 1px solid #ddd;padding: 8px; color: white; background-color:red;}
+table td {width: 18%;text-align: left;border: 1px solid #ddd;padding: 8px;}
+
+#countryinfo tr:not(:first-child):hover {
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+
+#titel {background-color:red; color:white;}
+
+@media screen {
+    div { border-collapse: collapse;}
+}

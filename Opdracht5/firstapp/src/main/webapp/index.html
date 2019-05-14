@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div id="frame">
+    <div id="myLocation">
+        <h1>Mijn locatie</h1>
+        <table>
+            <tr>
+                <td id="titel">Land code:</td><td><label id="landcode"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Land Naam:</td><td><label id="land"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Koers:</td><td><label id="koers"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Regio:</td><td><label id="regio"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Stad:</td><td><label id="stad"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Postcode:</td><td><label id="postcode"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Latitude:</td><td><label id="latitude"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Longitude</td><td><label id="longitude"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">IP:</td><td><label id="ip"></label></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="weatherInfo">
+        <h1 id="weatherinfoH1">Het weer</h1>
+        <table>
+            <tr>
+                <td id="titel">Temperatuur:</td><td><label id="temperatuur"></label></td>
+            </tr>
+            
+            <tr>
+                <td id="titel">Het weer:</td><td><label id="weer"></label></td>
+            </tr>
+            
+            <tr>
+                <td id="titel">Beschrijving:</td><td><label id="beschrijving"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Luchtvochtigheid:</td><td><label id="luchtvochtigheid"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Windsnelheid:</td><td><label id="windsnelheid"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Windrichting:</td><td><label id="windrichting"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Zonsopgang:</td><td><label id="zonsopgang"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Zonsondergang:</td><td><label id="zonsondergang"></label></td>
+            </tr>
+        </table>
+    </div>
+    <div id="countryList">
+        <h1>Landen informatie</h1>
+        <table id="countryinfo">
+            <tr>
+                <th>ISO3 code</th><th>Land</th><th>Hoofdstad</th><th>Regio</th><th>Continent</th><th>Oppervlakte</th><th>Inwoners</th>
+            </tr>
+        </table>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
