@@ -1,0 +1,5 @@
+docker pull postgres:latest                      <<<connect to pgadmin>>
+
+docker run -p 5432:5432 postgres                 <<<connect to pgadmin>>
+
+db naam : worlddbr
