@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div id="frame">
+    <div id="myLocation">
+        <h1>Mijn locatie</h1>
+        <table>
+            <tr>
+                <td id="titel">Land code:</td><td><label id="landcode"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Land Naam:</td><td><label id="land"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Koers:</td><td><label id="koers"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Regio:</td><td><label id="regio"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Stad:</td><td><label id="stad"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Postcode:</td><td><label id="postcode"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Latitude:</td><td><label id="latitude"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Longitude</td><td><label id="longitude"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">IP:</td><td><label id="ip"></label></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="weatherInfo">
+        <h1 id="weatherinfoH1">Het weer</h1>
+        <table>
+            <tr>
+                <td id="titel">Temperatuur:</td><td><label id="temperatuur"></label></td>
+            </tr>
+            
+            <tr>
+                <td id="titel">Het weer:</td><td><label id="weer"></label></td>
+            </tr>
+            
+            <tr>
+                <td id="titel">Beschrijving:</td><td><label id="beschrijving"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Luchtvochtigheid:</td><td><label id="luchtvochtigheid"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Windsnelheid:</td><td><label id="windsnelheid"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Windrichting:</td><td><label id="windrichting"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Zonsopgang:</td><td><label id="zonsopgang"></label></td>
+            </tr>
+
+            <tr>
+                <td id="titel">Zonsondergang:</td><td><label id="zonsondergang"></label></td>
+            </tr>
+        </table>
+    </div>
+    <div id="countryList">
+        <h1>Landen informatie</h1><button type="button" class="aanpassenbtn1" id="toevoeg_btn">Voeg een land toe</button>
+        <table id="countryinfo">
+            <tr>
+                <th>ISO3 code</th><th>Land</th><th>Hoofdstad</th><th>Regio</th><th>Continent</th><th>Oppervlakte</th><th>Inwoners</th><th>Verwerken</th>
+            </tr>
+        </table>
+    </div>
+    <div id="country_wijziggen" class="modal">
+		<form id="country_bewerken_form">
+			<span
+				onclick="document.getElementById('country_wijziggen').style.display='none'"
+				class="afsluiten" title="Country bewerken afsluiten">&times;</span>
+			<div class="modal-content">
+				<div class="subcontainer">
+					<h1>Country bewerken</h1>
+					<hr>
+					<label><b>Code</b></label> 
+					<input type="text" placeholder="code" name="code" id="code" disabled required>
+					<label><b>Iso3</b></label> 
+					<input type="text" placeholder="Iso" name="iso3" id="iso3" maxlength="3" required>
+					<label><b>Landnaam</b></label> 
+					<input type="text" placeholder="Name" name="name" id="name" required> 
+					<label><b>Continent</b></label>
+					<input type="text" placeholder="Continent" name="continent" id="continent" required>
+					<label><b>Regio</b></label> 
+					<input type="text" placeholder="Region" name="region" id="region" required> 
+					<label><b>Oppervlakte</b></label> 
+					<input type="number" placeholder="0" name="surface" id="surface" required>
+					<label><b>Hoofdstad</b></label> 
+					<input type="text" placeholder="Capital" name="capital" id="capital" required> 
+					<label><b>Inwoners</b></label> 
+					<input type="number" placeholder="0" name="population" id="population" required>
+
+					<div class="buttons2">
+						<button type="submit" class="aanpassenbtn1" id="aanpas_btn">Aanpassen</button>
+						<button type="button" class="annulerenbtn1" onclick="document.getElementById('country_wijziggen').style.display='none';">Annuleren</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+    <div id="country_toevoegen" class="modal">
+		<form id="country_toevoegen_form">
+			<span
+				onclick="document.getElementById('country_toevoegen').style.display='none'"
+				class="afsluiten" title="Country toevoegen afsluiten">&times;</span>
+			<div class="modal-content">
+				<div class="subcontainer">
+					<h1>Country toevoegen</h1>
+					<hr>
+					<label><b>Code</b></label> 
+					<input type="text" placeholder="code" name="code" id="code2" maxlength="2" required>
+					<label><b>Iso3</b></label> 
+					<input type="text" placeholder="Iso" name="iso3" id="iso32" maxlength="3" required>
+					<label><b>Landnaam</b></label> 
+					<input type="text" placeholder="Name" name="name" id="name2" required> 
+					<label><b>Continent</b></label>
+					<input type="text" placeholder="Continent" name="continent" id="continent2" required>
+					<label><b>Regio</b></label> 
+					<input type="text" placeholder="Region" name="region" id="region2" required> 
+					<label><b>Oppervlakte</b></label> 
+					<input type="number" placeholder="0" name="surface" id="surface2" required>
+					<label><b>Hoofdstad</b></label> 
+					<input type="text" placeholder="Capital" name="capital" id="capital2" required> 
+					<label><b>Lokaal naam</b></label> 
+					<input type="text" placeholder="local name" name="local" id="local2" required>
+					<label><b>Latitude</b></label> 
+					<input type="number" placeholder="0" name="latitude" id="latitude2" required>
+					<label><b>Longitude</b></label> 
+					<input type="number" placeholder="0" name="longitude" id="longitude2" required>
+					<label><b>Overheid</b></label> 
+					<input type="text" placeholder="Government form" name="government" id="government2" required> 
+					<label><b>Inwoners</b></label> 
+					<input type="number" placeholder="0" name="population" id="population2" required>
+
+					<div class="buttons2">
+						<button type="submit" class="aanpassenbtn1" id="voeg_btn">Aanpassen</button>
+						<button type="button" class="annulerenbtn1" onclick="document.getElementById('country_toevoegen').style.display='none';">Annuleren</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+    
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
