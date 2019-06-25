@@ -1,0 +1,17 @@
+docker pull postgres:latest                      <<<connect to pgadmin>>
+
+docker run -p 5432:5432 postgres                 <<<connect to pgadmin>>
+
+db naam : worlddb
+
+CREATE TABLE useraccount(
+   username VARCHAR (20) PRIMARY KEY,
+   password VARCHAR (20) NOT NULL,
+   role VARCHAR (20) NOT NULL
+);
+
+insert into useraccount (username, password, role) values ('ahmad','asd','user');
+
+insert into useraccount (username, password, role) values ('daan','sde','user');
+
+insert into useraccount (username, password, role) values ('somsom','somsom','user');

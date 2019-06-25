@@ -1,0 +1,141 @@
+body {
+	background-color: skyblue;
+}
+
+table th {
+	width: 200px;
+	text-align: left;
+	border: 1px solid #ddd;
+	padding: 8px;
+	color: white;
+	background-color: red;
+}
+
+table td {
+	width: 200px;
+	text-align: left;
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#countryinfo tr:not (:first-child ):hover {
+	background-color: white;
+	color: blue;
+	font-weight: bold;
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.afsluiten {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+.afsluiten:hover, .afsluiten:focus {
+	color: #f44336;
+	cursor: pointer;
+}
+
+.subcontainer {
+	padding: 16px;
+}
+
+.annulerenbtn1 {
+	padding: 14px 20px;
+	background-color: #f44336;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+}
+
+input[type=text], input[type=number], input[type=password] {
+	width: 95%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	opacity: 0.8;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+	opacity: 1;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.annulerenbtn1, .aanpassenbtn1 {
+	float: left;
+	width: 50%;
+}
+
+@media screen and (max-width: 450px) {
+	#countryList {
+		overflow-x: auto;
+	}
+	.annulerenbtn1, .aanpassenbtn1 {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 451px) {
+	#frame {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0fr 1fr;
+	}
+	#myLocation {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	#weatherInfo {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	#countryList {
+		grid-column: 1/3;
+		grid-row: 2;
+	}
+}
+
+#titel {
+	background-color: red;
+	color: white;
+}
+
+@media screen {
+	div {
+		border-collapse: collapse;
+	}
+}

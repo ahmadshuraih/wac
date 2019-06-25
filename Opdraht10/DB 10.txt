@@ -1,0 +1,1 @@
+postgres://albsisizmbalie:372fd9d19446448f82cafdb5ac781bf2cf1013fb45d8ab33835f5da78802216f@ec2-54-228-246-214.eu-west-1.compute.amazonaws.com:5432/dabk6fqekjgjg0
