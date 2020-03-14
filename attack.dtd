@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY cat SYSTEM 'https://gitlab.com/gitlab-org/security-products/tests/webgoat/-/raw/develop/webgoat-lessons/xxe/src/main/resources/secret.txt'>
+<!ENTITY ping SYSTEM 'https://gitlab.com/gitlab-org/security-products/tests/webgoat/-/raw/develop/webgoat-lessons/xxe/src/main/resources/secret.txt'>
