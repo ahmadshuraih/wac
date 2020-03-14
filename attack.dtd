@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY ping SYSTEM 'https://gitlab.com/gitlab-org/security-products/tests/webgoat/-/raw/develop/webgoat-lessons/xxe/src/main/resources/secret.txt'>
+<!ENTITY ping SYSTEM 'http://192.168.56.1:9090/landing'>
